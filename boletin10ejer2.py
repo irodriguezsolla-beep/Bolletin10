@@ -15,7 +15,7 @@ class Data:
         else:
             raise TypeError(f"El formato de ano es {type(ano)} y no es entero")
     def getAno(self):
-        return self.ano
+        return self.__ano
 
     def setMes(self,mes):
         if type(mes) == int:
@@ -65,8 +65,8 @@ class Data:
 
 if __name__ == "__main__":
     try:
-        data = Data(2024,6,30)
-        print("Data creada correctamente:", data)
+        data = Data(2024,4,30)
+        print (data)
     except DataError as e:
         print("Erro de formato na data:", e)
     except TypeError as i:

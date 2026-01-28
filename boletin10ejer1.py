@@ -1,10 +1,10 @@
 from ErrorDNI import DniError
-from ErrorLicencia import LicenciaEr
+from ErrorLicencia import LicenciaError
 class Persona:
     def __init__(self,nome,dni,direcion):
         self.setNome(nome)
         self.setDni(dni)
-        self.setDirecion(direcion)
+        self.setDirecion(direcion)0
 
     def setNome(self, nome):
         if type(nome) == str:
