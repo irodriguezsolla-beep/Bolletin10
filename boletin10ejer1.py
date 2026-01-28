@@ -1,5 +1,5 @@
 from ErrorDNI import DniError
-from ErrorLicencia import LicenciaError
+from ErrorLicencia import LicenciaEr
 class Persona:
     def __init__(self,nome,dni,direcion):
         self.setNome(nome)
