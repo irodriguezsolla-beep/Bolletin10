@@ -1,7 +1,7 @@
 from persona import Persona
 from ErrorLicencia import LicenciaError
 from ErrorDNI import DniError
-class pito(Persona):
+class Deport(Persona):
     def __init__(self,nome,dni,direcion,deporte,club,licencia):
         super().__init__(nome,dni,direcion)
         self.setDeporte(deporte)
@@ -48,7 +48,7 @@ class pito(Persona):
 if __name__=='__main__':
 
     try:
-        isaac = pito("Alan","00000000T","Morgadanes","Futball","Real Madrid","2026Fut123456")
+        isaac = Deport("Alan","00000000T","Morgadanes","Futball","Real Madrid","2026Fut123456")
         print(isaac)
     except TypeError as t:
         print(t)
