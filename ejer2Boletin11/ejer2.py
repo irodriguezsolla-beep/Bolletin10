@@ -12,7 +12,7 @@ try:
         for p in string.punctuation:
             texto = texto.replace(p, "")
 
-        palabras = texto.split()
+        palabras = texto.split() #separar palabras
 
         # Contar palabras
         for palabra in palabras:
