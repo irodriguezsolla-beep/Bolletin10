@@ -9,7 +9,7 @@ try:
     with open(nome_ficheiro, "r", encoding="utf-8") as f:
         texto = f.read().lower()
         # Eliminar signos de puntuación
-        for p in string.punctuation:
+        for p in string.punctuation: # string Es una constante de Python que contiene todos los caracteres de puntuación, como:
             texto = texto.replace(p, "")
 
         palabras = texto.split() #separar palabras
