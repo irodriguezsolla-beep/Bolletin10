@@ -36,7 +36,7 @@ class Cliente:
     @staticmethod
     def ModificarDados():
         buscar_id = input("Ingrese el ID del cliente que desea modificar: ")
-        for i, cliente in enumerate(Cliente.listaclientes):##Recore la lista
+        for i, cliente in enumerate(Cliente.listaclientes): ##Recore la lista
             if cliente.ID == buscar_id:
                 cliente.nombre = input("Nuevo nombre: ")
                 cliente.telefone = input("Nuevo telefono: ")
